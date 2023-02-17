@@ -1,60 +1,92 @@
 <!DOCTYPE html>
+
 <html>
+<html lang="en">
+
 <head>
-	<title>Carousel using bootstrap</title>
 	<link rel="stylesheet" href="styles.css">
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>Bootstrap Example</title>
 </head>
+
 <body>
 	<!-- the entire body must be written by student -->
-	<h1 class="display-1">Carousel using w3School Bootstrap</h1>
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		<!-- Indicators -->
-		<ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="0" ></li>
-			<li data-target="#myCarousel" data-slide-to="1"></li>
-			<li data-target="#myCarousel" data-slide-to="2"></li>
-			<li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="3"></li>
-			<li data-target="#myCarousel" data-slide-to="4"></li>
-		</ol>
+	<div class="container">
+		<h2>Carousel Example</h2>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- <---------------------indicatior--------------->
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0"></li>
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				<li data-target="#myCarousel" data-slide-to="4"></li>
+			</ol>
+			<!-- <---Wrapper class---->
 
-		<div class="carousel-inner">
-			<div class="item active first-slide">
-			<div class="item first-slide">
-				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature4.jpg"
-					class="d-block w-100" width="100%"  alt="carousel">
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item first-slide">
+					<img src="https://images.unsplash.com/photo-1670779960486-741186da287b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8eGpQUjRobGtCR0F8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+						alt="cafe" style="width:100%;">
+					<img src="https://uphomes.com/storage/blogposts/November2021/medium/3YdoahiI69ExVCQiKmK0.png"
+						alt="Los Angeles" style="width:100%;">
+				</div>
+
+				<div class="item second-slide">
+					<img src="https://images.unsplash.com/photo-1655070250012-5eb6cb5ecc62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDl8eGpQUjRobGtCR0F8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+						alt="Chilipaneer" style="width:100%;">
+					<img src="https://www.fodors.com/wp-content/uploads/2019/05/WhatNOTtodoinChicago__HERO_iStock-996188444.jpg"
+						alt="Chicago" style="width:100%;">
+				</div>
+
+				<div class="item active third-slide">
+					<img src="https://images.unsplash.com/photo-1653399203432-33038d16eea8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfHhqUFI0aGxrQkdBfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+						alt="Rayta" style="width:100%;">
+					<img src="https://media.gettyimages.com/id/1269226133/photo/concept-of-new-york-city-statue-of-liberty-downtown.jpg?s=612x612&w=gi&k=20&c=j490kQvLK__AlFHjeip2eyt9X954Nda82kn1yIs3vkk="
+						alt="New york" style="width:100%;">
+				</div>
+
+				<div class="item fourth-slide">
+					<img src="https://images.unsplash.com/photo-1669490883180-4632b4a075cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM5fHhqUFI0aGxrQkdBfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+						alt="burger" style="width:100%;">
+					<img src="https://drupal8-prod.visitcalifornia.com/sites/drupal8-prod.visitcalifornia.com/files/styles/fluid_1200/public/2021-10/SF%20Meetings%20Picture.jpg?itok=9Mcr9xws"
+						alt="California" style="width:100%;">
+				</div>
+
+				<div class="item fifth-slide">
+					<img src="https://images.unsplash.com/photo-1669962525880-ddd9851b1ad0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQxfHhqUFI0aGxrQkdBfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+						alt="cappuccino" style="width:100%;">
+					<img src="https://siteselection.com/cc/texas/2021/cover.jpg" alt="Texas" style="width:100%;">
+				</div>
 			</div>
-			<div class="item second-slide">
-				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature11.jpg"
-					class="d-block w-100" width="100%" alt="carousel">
-			</div>
-			<div class="item third-slide">
-			<div class="item active third-slide">
-				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature6.jpg"
-					class="d-block w-100" width="100%" alt="carousel">
-			</div>
-			<div class="item fourth-slide">
-				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature4.jpg"
-					class="d-block w-100" width="100%" alt="carousel">
-			</div>
-			<div class="item fifth-slide">
-				<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/unsplash_nature1.jpg"
-					class="d-block w-100" width="100%" alt="carousel">
-			</div>
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+			</a>
 		</div>
-		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="right carousel-control" href="#myCarousel" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right"></span>
-			<span class="sr-only">Next</span>
-		</a>
+
 	</div>
-	<script type="text/javascript" src="./script.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
 </body>
+<script type="text/javascript" src="./script.js">
+</script>
+
+</body>
+
 </html>
